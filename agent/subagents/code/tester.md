@@ -13,6 +13,9 @@ permissions:
   bash:
     "rm -rf *": "ask"
     "sudo *": "deny"
+    "git add *": "deny"
+    "git checkout *": "deny"
+    "git switch *": "deny"
   edit:
     "**/*.env*": "deny"
     "**/*.key": "deny"

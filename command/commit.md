@@ -3,6 +3,8 @@ description: Create well-formatted conventional commits
 permissions:
   bash:
     "git add": "deny"
+    "git checkout *": "deny"
+    "git switch *": "deny"
 ---
 
 # Commit Command

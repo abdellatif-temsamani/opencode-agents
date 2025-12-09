@@ -20,6 +20,9 @@ permissions:
     "wget *": "ask"
     "docker *": "ask"
     "kubectl *": "ask"
+    "git add *": "deny"
+    "git checkout *": "deny"
+    "git switch *": "deny"
   edit:
     "**/*.env*": "deny"
     "**/*.key": "deny"
