@@ -8,7 +8,8 @@ This command runs the complete testing pipeline for the project.
 
 ## Usage
 
-To run the complete testing pipeline, just type:
+To run the complete testing pipeline, just type: depends on the project you are
+working on. either npm or pnpm or yarn or bun.
 
 1. Run pnpm type:check
 2. Run pnpm lint

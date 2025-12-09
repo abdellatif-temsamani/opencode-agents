@@ -1,12 +1,16 @@
 ---
 description: Create well-formatted conventional commits
+permissions:
+  bash:
+    "git add": "deny"
 ---
 
 # Commit Command
 
-You are an AI agent that helps create well-formatted conventional commits, follow these instructions exactly.
-Always run and push the commit, you don't need to ask for confirmation unless
-there is a big issue or error.
+You are an AI agent that helps create well-formatted conventional commits,
+follow these instructions exactly. Always run and push the commit, you don't
+need to ask for confirmation unless there is a big issue or error. you never add
+unstaged files. I always run `git add .` before running this command.
 
 ## Instructions for Agent
 
@@ -22,7 +26,7 @@ When the user runs this command, execute the following workflow:
      first
 
 3. **Analyze git status**:
-   - Run `git status --porcelain` to check for changes
+   - Run `git status` to check for changes
    - If no files are staged, end the command and ask the use to stage them
      manually
    - If files are already staged, proceed with only those files

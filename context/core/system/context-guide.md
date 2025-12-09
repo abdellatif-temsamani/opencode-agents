@@ -4,11 +4,14 @@
 
 **Golden Rule**: Fetch context when needed, not before (lazy loading)
 
-**Key Principle**: Use context index for discovery, load specific files as needed
+**Key Principle**: Use context index for discovery, load specific files as
+needed
 
-**Index Location**: `/home/flagmate/Downloads/myagents/context/index.md` - Quick map of all contexts
+**Index Location**: `/home/flagmate/Downloads/myagents/context/index.md` - Quick
+map of all contexts
 
-**Structure**: standards/ (quality + analysis), workflows/ (process + review), system/ (internals)
+**Structure**: standards/ (quality + analysis), workflows/ (process + review),
+system/ (internals)
 
 **Session Location**: `.tmp/sessions/{timestamp}-{task-slug}/context.md`
 
@@ -16,13 +19,16 @@
 
 ## Overview
 
-Context files provide guidelines and templates for specific tasks. Use the index system for efficient discovery and lazy loading to keep prompts lean.
+Context files provide guidelines and templates for specific tasks. Use the index
+system for efficient discovery and lazy loading to keep prompts lean.
 
 ## Context Index System
 
-**Central Index**: `/home/flagmate/Downloads/myagents/context/index.md` - Ultra-compact map of all contexts
+**Central Index**: `/home/flagmate/Downloads/myagents/context/index.md` -
+Ultra-compact map of all contexts
 
 The index provides:
+
 - Quick map for common tasks (code, docs, tests, review, delegation)
 - Triggers/keywords for each context
 - Dependencies between contexts
@@ -30,9 +36,11 @@ The index provides:
 
 ### Available Context Files
 
-All files are in `/home/flagmate/Downloads/myagents/context/core/` with organized subfolders:
+All files are in `/home/flagmate/Downloads/myagents/context/core/` with
+organized subfolders:
 
 ### Standards (Quality Guidelines + Analysis)
+
 - `standards/code.md` - Modular, functional code principles [critical]
 - `standards/docs.md` - Documentation standards [critical]
 - `standards/tests.md` - Testing standards [critical]
@@ -40,6 +48,7 @@ All files are in `/home/flagmate/Downloads/myagents/context/core/` with organize
 - `standards/analysis.md` - Analysis framework [high]
 
 ### Workflows (Process Templates + Review)
+
 - `workflows/delegation.md` - Delegation template [high]
 - `workflows/task-breakdown.md` - Complex task breakdown [high]
 - `workflows/sessions.md` - Session lifecycle [medium]
@@ -48,20 +57,24 @@ All files are in `/home/flagmate/Downloads/myagents/context/core/` with organize
 ## How to Use the Index
 
 **Step 1: Check Quick Map** (for common tasks)
+
 - Code task? → Load `standards/code.md`
 - Docs task? → Load `standards/docs.md`
 - Review task? → Load `workflows/review.md`
 
 **Step 2: Load Index** (for keyword matching)
+
 - Load `/home/flagmate/Downloads/myagents/context/index.md`
 - Scan triggers to find relevant contexts
 - Load specific context files as needed
 
 **Step 3: Load Dependencies**
+
 - Check `deps:` in index
 - Load dependent contexts for complete guidelines
 
 **Benefits:**
+
 - No prompt bloat (index is only ~120 tokens)
 - Fetch only what's relevant
 - Faster for simple tasks
@@ -70,47 +83,56 @@ All files are in `/home/flagmate/Downloads/myagents/context/core/` with organize
 ## When to Use Each File
 
 ### /home/flagmate/Downloads/myagents/context/core/standards/code.md
+
 - Writing new code
 - Modifying existing code
 - Following modular/functional patterns
 - Making architectural decisions
 
 ### /home/flagmate/Downloads/myagents/context/core/standards/docs.md
+
 - Writing README files
 - Creating API documentation
 - Adding code comments
 
 ### /home/flagmate/Downloads/myagents/context/core/standards/tests.md
+
 - Writing new tests
 - Running test suites
 - Debugging test failures
 
 ### /home/flagmate/Downloads/myagents/context/core/standards/patterns.md
+
 - Error handling
 - Security patterns
 - Common code patterns
 
 ### /home/flagmate/Downloads/myagents/context/core/standards/analysis.md
+
 - Analyzing codebase patterns
 - Investigating bugs
 - Evaluating architecture
 
 ### /home/flagmate/Downloads/myagents/context/core/workflows/delegation.md
+
 - Delegating to general agent
 - Creating task context
 - Multi-file coordination
 
 ### /home/flagmate/Downloads/myagents/context/core/workflows/task-breakdown.md
+
 - Tasks with 4+ files
 - Estimated effort >60 minutes
 - Complex dependencies
 
 ### /home/flagmate/Downloads/myagents/context/core/workflows/sessions.md
+
 - Session lifecycle
 - Cleanup procedures
 - Session isolation
 
 ### /home/flagmate/Downloads/myagents/context/core/workflows/review.md
+
 - Reviewing code
 - Conducting code audits
 - Providing PR feedback
@@ -122,45 +144,52 @@ When delegating, create focused task context:
 **Location**: `.tmp/sessions/{timestamp}-{task-slug}/context.md`
 
 **Structure**:
+
 ```markdown
 # Task Context: {Task Name}
 
-Session ID: {id}
-Created: {timestamp}
-Status: in_progress
+Session ID: {id} Created: {timestamp} Status: in_progress
 
 ## Current Request
+
 {What user asked for}
 
 ## Requirements
+
 - {requirement 1}
 - {requirement 2}
 
 ## Decisions Made
+
 - {decision 1}
 
 ## Files to Modify/Create
+
 - {file 1} - {purpose}
 
 ## Static Context Available
+
 - /home/flagmate/Downloads/myagents/context/core/standards/code.md
 - /home/flagmate/Downloads/myagents/context/core/standards/tests.md
 
 ## Constraints/Notes
+
 {Important context}
 
 ## Progress
+
 - [ ] {task 1}
 - [ ] {task 2}
 
 ---
-**Instructions for Subagent:**
-{Specific instructions}
+
+**Instructions for Subagent:** {Specific instructions}
 ```
 
 ## Session Management
 
 ### Session Structure
+
 ```
 .tmp/sessions/{session-id}/
 ├── context.md          # Task context
@@ -169,22 +198,20 @@ Status: in_progress
 ```
 
 ### Session ID Format
-`{timestamp}-{random-4-chars}`
-Example: `20250119-143022-a4f2`
+
+`{timestamp}-{random-4-chars}` Example: `20250119-143022-a4f2`
 
 ### Cleanup
+
 - Ask user before deleting session files
 - Remove after task completion
 - Keep if user wants to review
 
 ## Best Practices
 
-✅ Use index for context discovery
-✅ Load only relevant context files
-✅ Check dependencies in index
-✅ Create temp context when delegating
-✅ Clean up sessions after completion
-✅ Reference specific sections when possible
-✅ Keep temp context focused and concise
+✅ Use index for context discovery ✅ Load only relevant context files ✅ Check
+dependencies in index ✅ Create temp context when delegating ✅ Clean up
+sessions after completion ✅ Reference specific sections when possible ✅ Keep
+temp context focused and concise
 
 **Golden Rule**: Fetch context when needed, not before.

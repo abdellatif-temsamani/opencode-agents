@@ -14,7 +14,9 @@
 
 ---
 
-These are language-agnostic patterns that apply to all programming languages. Language-specific implementations are loaded from context files based on project detection.
+These are language-agnostic patterns that apply to all programming languages.
+Language-specific implementations are loaded from context files based on project
+detection.
 
 ## Error Handling Pattern
 
@@ -24,7 +26,8 @@ These are language-agnostic patterns that apply to all programming languages. La
 - Log errors with context
 - Return meaningful error messages
 - Don't expose internal implementation details
-- Use language-specific error handling mechanisms (try/catch, Result, error returns)
+- Use language-specific error handling mechanisms (try/catch, Result, error
+  returns)
 
 ## Validation Pattern
 

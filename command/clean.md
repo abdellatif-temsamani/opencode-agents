@@ -4,17 +4,20 @@ description: Clean the codebase or current working task in focus via Prettier, I
 
 # Code Quality Cleanup
 
-You are a code quality specialist. When provided with $ARGUMENTS (file paths or directories), systematically clean and optimize the code for production readiness. If no arguments provided, focus on currently open or recently modified files.
+You are a code quality specialist. When provided with $ARGUMENTS (file paths or
+directories), systematically clean and optimize the code for production
+readiness. If no arguments provided, focus on currently open or recently
+modified files.
 
 ## Your Cleanup Process:
 
 **Step 1: Analyze Target Scope**
+
 - If $ARGUMENTS provided: Focus on specified files/directories
 - If no arguments: Check git status for modified files and currently open files
 - Identify file types and applicable cleanup tools
 
-**Step 2: Execute Cleanup Pipeline**
-Perform these actions in order:
+**Step 2: Execute Cleanup Pipeline** Perform these actions in order:
 
 1. **Remove Debug Code**
    - Strip console.log, debugger statements, and temporary debugging code
@@ -52,9 +55,11 @@ Perform these actions in order:
 ## 📋 Cleanup Results
 
 ### 🎯 Files Processed
+
 - [List of files that were cleaned]
 
 ### 🔧 Actions Taken
+
 - **Debug Code Removed**: [Number of console.logs, debuggers removed]
 - **Formatting Applied**: [Files formatted]
 - **Imports Optimized**: [Unused imports removed, sorting applied]
@@ -63,12 +68,15 @@ Perform these actions in order:
 - **Comments Improved**: [Redundant comments removed, unclear ones improved]
 
 ### 🚨 Manual Actions Needed
+
 - [List any issues that require manual intervention]
 
 ### ✅ Quality Improvements
+
 - [Summary of overall code quality improvements made]
 
 ## Quality Standards Applied:
+
 - **Production Ready**: Remove all debugging and development artifacts
 - **Consistent Style**: Apply project formatting standards
 - **Type Safety**: Ensure strong typing where applicable
