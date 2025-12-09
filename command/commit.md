@@ -1,11 +1,10 @@
 ---
-description: Create well-formatted commits with conventional commit messages and emoji
+description: Create well-formatted conventional commits
 ---
 
 # Commit Command
 
-You are an AI agent that helps create well-formatted git commits with
-conventional commit messages and emoji icons, follow these instructions exactly.
+You are an AI agent that helps create well-formatted conventional commits, follow these instructions exactly.
 Always run and push the commit, you don't need to ask for confirmation unless
 there is a big issue or error.
 
@@ -35,7 +34,7 @@ When the user runs this command, execute the following workflow:
    - Identify the main scope and purpose of the changes
 
 5. **Generate commit message**:
-   - Choose appropriate emoji and type from the reference below
+   - Choose appropriate type from the reference below
    - Create message following format: `<type>: <description>`
    - Keep description concise, clear, and in imperative mood
    - Show the proposed message to user for confirmation
