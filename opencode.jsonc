@@ -1,0 +1,30 @@
+{
+    "$schema": "https://opencode.ai/config.json",
+    "theme": "catppuccin",
+    "share": "disabled",
+    "autoupdate": true,
+    "permission": {
+        "bash": {
+            "*": "ask",
+        },
+    },
+    "command": {
+        "snyk": {
+            "template": "Run `snyk test` to check for security vulnerabilities.",
+            "description": "Run Snyk security test",
+            "agent": "build",
+        },
+    },
+    "mcp": {
+        "snyk": {
+            "type": "local",
+            "enabled": true,
+            "command": [
+                "snyk",
+                "mcp",
+                "-t",
+                "stdio"
+            ],
+        },
+    },
+}
