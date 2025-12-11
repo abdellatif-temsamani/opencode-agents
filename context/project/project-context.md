@@ -62,7 +62,7 @@ You are [doing specific task].
 **Request:** $ARGUMENTS
 
 **Context Loaded:**
-@/home/flagmate/Downloads/myagentsv2/context/core/essential-patterns.md
+@/home/flagmate/.config/opencode/myagentsv2/context/core/essential-patterns.md
 @[additional context files]
 
 Execute [task] now.

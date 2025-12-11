@@ -85,6 +85,9 @@ OpenCoder specializes in code implementation:
 
 ## Usage
 
+```bash
+grep -rl "/home/flagmate/.config/opencode/" . | xargs sed -i 's#/home/flagmate/.config/opencode/#{CURRENT_DIR}#g'
+```
 ### Agent Commands
 
 - `/analyze` - Analyze codebase patterns and structure

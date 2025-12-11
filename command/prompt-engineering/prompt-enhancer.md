@@ -168,10 +168,10 @@ patterns are non-negotiable</conflict_resolution> </execution_priority>
         5. Recalculate ratio, target 40-50%
       </process>
       <extraction_candidates>
-        <session_management>Extract to /home/flagmate/Downloads/myagentsv2/context/core/session-management.md</session_management>
-        <context_discovery>Extract to /home/flagmate/Downloads/myagentsv2/context/core/context-discovery.md</context_discovery>
-        <detailed_examples>Extract to /home/flagmate/Downloads/myagentsv2/context/core/examples.md</detailed_examples>
-        <implementation_specs>Extract to /home/flagmate/Downloads/myagentsv2/context/core/specifications.md</implementation_specs>
+        <session_management>Extract to /home/flagmate/.config/opencode/myagentsv2/context/core/session-management.md</session_management>
+        <context_discovery>Extract to /home/flagmate/.config/opencode/myagentsv2/context/core/context-discovery.md</context_discovery>
+        <detailed_examples>Extract to /home/flagmate/.config/opencode/myagentsv2/context/core/examples.md</detailed_examples>
+        <implementation_specs>Extract to /home/flagmate/.config/opencode/myagentsv2/context/core/specifications.md</implementation_specs>
       </extraction_candidates>
       <checkpoint>Instruction ratio 40-50%, external references created, functionality preserved</checkpoint>
     </stage>
@@ -359,7 +359,7 @@ patterns are non-negotiable</conflict_resolution> </execution_priority>
         6. **Modular Design**: Extracted N sections to references
 
         ### Files Created (if applicable)
-        - `/home/flagmate/Downloads/myagentsv2/context/core/[name].md` - [description]
+        - `/home/flagmate/.config/opencode/myagentsv2/context/core/[name].md` - [description]
 
         ---
 
@@ -374,7 +374,7 @@ patterns are non-negotiable</conflict_resolution> </execution_priority>
         **Deployment Readiness**: Ready | Needs Testing | Requires Customization
 
         **Required Context Files** (if any):
-        - `/home/flagmate/Downloads/myagentsv2/context/core/[file].md`
+        - `/home/flagmate/.config/opencode/myagentsv2/context/core/[file].md`
 
         **Breaking Changes**: None | [List if any]
 
@@ -471,7 +471,7 @@ unless explicitly noted</backward_compatible> </quality_standards>
 </principles>
 
 <references>
-  <optimization_report ref="/home/flagmate/Downloads/myagentsv2/context/core/prompt-optimization-report.md">
+  <optimization_report ref="/home/flagmate/.config/opencode/myagentsv2/context/core/prompt-optimization-report.md">
     Detailed before/after metrics from OpenAgent optimization
   </optimization_report>
   <research_patterns ref="docs/agents/research-backed-prompt-design.md">

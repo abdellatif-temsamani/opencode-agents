@@ -65,15 +65,15 @@ WHY THIS MATTERS:
 Required context files:
 
 - Code tasks →
-  /home/flagmate/Downloads/myagentsv2/context/core/standards/code.md
+  /home/flagmate/.config/opencode/myagentsv2/context/core/standards/code.md
 - Docs tasks →
-  /home/flagmate/Downloads/myagentsv2/context/core/standards/docs.md
+  /home/flagmate/.config/opencode/myagentsv2/context/core/standards/docs.md
 - Tests tasks →
-  /home/flagmate/Downloads/myagentsv2/context/core/standards/tests.md
+  /home/flagmate/.config/opencode/myagentsv2/context/core/standards/tests.md
 - Review tasks →
-  /home/flagmate/Downloads/myagentsv2/context/core/workflows/review.md
+  /home/flagmate/.config/opencode/myagentsv2/context/core/workflows/review.md
 - Delegation →
-  /home/flagmate/Downloads/myagentsv2/context/core/workflows/delegation.md
+  /home/flagmate/.config/opencode/myagentsv2/context/core/workflows/delegation.md
 
 CONSEQUENCE OF SKIPPING: Work that doesn't match project standards = wasted
 effort + rework </critical_context_requirement>
@@ -138,7 +138,7 @@ task(
 
       Edge case - "Context loading vs minimal overhead":
       - @critical_context_requirement (Tier 1) ALWAYS overrides minimal overhead (Tier 3)
-      - Context files (/home/flagmate/Downloads/myagentsv2/context/core/*.md) MANDATORY, not optional
+      - Context files (/home/flagmate/.config/opencode/myagentsv2/context/core/*.md) MANDATORY, not optional
       - Session files (.tmp/sessions/*) created only when needed
       - Ex: "Write docs" → MUST load standards/docs.md (Tier 1 override)
       - Ex: "Write docs" → Skip ctx for efficiency (VIOLATION)
@@ -178,11 +178,11 @@ Answer directly, naturally - no approval needed
 
       1. Classify task: docs|code|tests|delegate|review|patterns|bash-only
       2. Map to context file:
-         - code (write/edit code) → Read /home/flagmate/Downloads/myagentsv2/context/core/standards/code.md NOW
-         - docs (write/edit docs) → Read /home/flagmate/Downloads/myagentsv2/context/core/standards/docs.md NOW
-         - tests (write/edit tests) → Read /home/flagmate/Downloads/myagentsv2/context/core/standards/tests.md NOW
-         - review (code review) → Read /home/flagmate/Downloads/myagentsv2/context/core/workflows/review.md NOW
-         - delegate (using task tool) → Read /home/flagmate/Downloads/myagentsv2/context/core/workflows/delegation.md NOW
+         - code (write/edit code) → Read /home/flagmate/.config/opencode/myagentsv2/context/core/standards/code.md NOW
+         - docs (write/edit docs) → Read /home/flagmate/.config/opencode/myagentsv2/context/core/standards/docs.md NOW
+         - tests (write/edit tests) → Read /home/flagmate/.config/opencode/myagentsv2/context/core/standards/tests.md NOW
+         - review (code review) → Read /home/flagmate/.config/opencode/myagentsv2/context/core/workflows/review.md NOW
+         - delegate (using task tool) → Read /home/flagmate/.config/opencode/myagentsv2/context/core/workflows/delegation.md NOW
          - bash-only → No context needed, proceed to 3.2
 
       3. Apply context:
@@ -190,11 +190,11 @@ Answer directly, naturally - no approval needed
          IF direct: Use Read tool to load context file, then proceed to 3.2
 
       <automatic_loading>
-        IF code task → /home/flagmate/Downloads/myagentsv2/context/core/standards/code.md (MANDATORY)
-        IF docs task → /home/flagmate/Downloads/myagentsv2/context/core/standards/docs.md (MANDATORY)
-        IF tests task → /home/flagmate/Downloads/myagentsv2/context/core/standards/tests.md (MANDATORY)
-        IF review task → /home/flagmate/Downloads/myagentsv2/context/core/workflows/review.md (MANDATORY)
-        IF delegation → /home/flagmate/Downloads/myagentsv2/context/core/workflows/delegation.md (MANDATORY)
+        IF code task → /home/flagmate/.config/opencode/myagentsv2/context/core/standards/code.md (MANDATORY)
+        IF docs task → /home/flagmate/.config/opencode/myagentsv2/context/core/standards/docs.md (MANDATORY)
+        IF tests task → /home/flagmate/.config/opencode/myagentsv2/context/core/standards/tests.md (MANDATORY)
+        IF review task → /home/flagmate/.config/opencode/myagentsv2/context/core/workflows/review.md (MANDATORY)
+        IF delegation → /home/flagmate/.config/opencode/myagentsv2/context/core/workflows/delegation.md (MANDATORY)
         IF bash-only → No context required
 
         WHEN DELEGATING TO SUBAGENTS:
@@ -299,7 +299,7 @@ tasks/subtasks/{feature}/{seq}-{task}.md (individual tasks) - Next suggested
 task to start with </expected_return>
 </route> </specialized_routing>
 
-<process ref="/home/flagmate/Downloads/myagentsv2/context/core/workflows/delegation.md">Full
+<process ref="/home/flagmate/.config/opencode/myagentsv2/context/core/workflows/delegation.md">Full
 delegation template & process</process> </delegation_rules>
 
 <principles>
@@ -312,20 +312,20 @@ delegation template & process</process> </delegation_rules>
 </principles>
 
 <static_context> Context index:
-/home/flagmate/Downloads/myagentsv2/context/index.md
+/home/flagmate/.config/opencode/myagentsv2/context/index.md
 
 Load index when discovering contexts by keywords. For common tasks:
 
 - Code tasks →
-  /home/flagmate/Downloads/myagentsv2/context/core/standards/code.md
+  /home/flagmate/.config/opencode/myagentsv2/context/core/standards/code.md
 - Docs tasks →
-  /home/flagmate/Downloads/myagentsv2/context/core/standards/docs.md
+  /home/flagmate/.config/opencode/myagentsv2/context/core/standards/docs.md
 - Tests tasks →
-  /home/flagmate/Downloads/myagentsv2/context/core/standards/tests.md
+  /home/flagmate/.config/opencode/myagentsv2/context/core/standards/tests.md
 - Review tasks →
-  /home/flagmate/Downloads/myagentsv2/context/core/workflows/review.md
+  /home/flagmate/.config/opencode/myagentsv2/context/core/workflows/review.md
 - Delegation →
-  /home/flagmate/Downloads/myagentsv2/context/core/workflows/delegation.md
+  /home/flagmate/.config/opencode/myagentsv2/context/core/workflows/delegation.md
 
 Full index includes all contexts with triggers and dependencies. Context files
 loaded per @critical_context_requirement. </static_context>

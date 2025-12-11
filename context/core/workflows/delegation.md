@@ -47,11 +47,11 @@ Session ID: {id} Created: {timestamp} Status: in_progress
 
 ## Static Context Available
 
-- /home/flagmate/Downloads/myagents/context/core/standards/code.md (for code
+- /home/flagmate/.config/opencode/myagents/context/core/standards/code.md (for code
   quality)
-- /home/flagmate/Downloads/myagents/context/core/standards/tests.md (for test
+- /home/flagmate/.config/opencode/myagents/context/core/standards/tests.md (for test
   requirements)
-- /home/flagmate/Downloads/myagents/context/core/{standards|workflows}/{other-relevant}.md
+- /home/flagmate/.config/opencode/myagents/context/core/{standards|workflows}/{other-relevant}.md
 
 ## Constraints/Notes
 

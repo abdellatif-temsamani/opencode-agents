@@ -123,7 +123,7 @@ For each profile (essential, developer, business, full, advanced):
 
 ### Step 5: Validate Context File Structure
 
-1. List all files in `/home/flagmate/Downloads/myagents/context/`
+1. List all files in `/home/flagmate/.config/opencode/myagents/context/`
 2. Check against registry context entries
 3. Identify orphaned files (exist but not in registry)
 4. Identify missing files (in registry but don't exist)
@@ -229,7 +229,7 @@ README) ✅ Business: 15 components (matches README) ✅ Full: 35 components
 ## ⚠️ Warnings (3)
 
 1. **Orphaned Context File**
-   - File: `/home/flagmate/Downloads/myagents/context/legacy/old-patterns.md`
+   - File: `/home/flagmate/.config/opencode/myagents/context/legacy/old-patterns.md`
    - Issue: Exists but not referenced in registry
    - Recommendation: Add to registry or remove file
 
@@ -250,7 +250,7 @@ README) ✅ Business: 15 components (matches README) ✅ Full: 35 components
 1. **Missing Context File**
    - Component: `context:advanced-patterns`
    - Expected path:
-     `/home/flagmate/Downloads/myagents/context/core/advanced-patterns.md`
+     `/home/flagmate/.config/opencode/myagents/context/core/advanced-patterns.md`
    - Referenced in: developer, full, advanced profiles
    - Action: Create file or remove from registry
 
@@ -304,7 +304,7 @@ README) ✅ Business: 15 components (matches README) ✅ Full: 35 components
 ### High Priority (Errors)
 
 1. Create missing file:
-   `/home/flagmate/Downloads/myagents/context/core/advanced-patterns.md`
+   `/home/flagmate/.config/opencode/myagents/context/core/advanced-patterns.md`
 2. Fix broken dependency in `opencoder`
 
 ### Medium Priority (Warnings)

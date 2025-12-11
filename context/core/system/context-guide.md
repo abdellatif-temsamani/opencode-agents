@@ -7,7 +7,7 @@
 **Key Principle**: Use context index for discovery, load specific files as
 needed
 
-**Index Location**: `/home/flagmate/Downloads/myagents/context/index.md` - Quick
+**Index Location**: `/home/flagmate/.config/opencode/myagents/context/index.md` - Quick
 map of all contexts
 
 **Structure**: standards/ (quality + analysis), workflows/ (process + review),
@@ -24,7 +24,7 @@ system for efficient discovery and lazy loading to keep prompts lean.
 
 ## Context Index System
 
-**Central Index**: `/home/flagmate/Downloads/myagents/context/index.md` -
+**Central Index**: `/home/flagmate/.config/opencode/myagents/context/index.md` -
 Ultra-compact map of all contexts
 
 The index provides:
@@ -36,7 +36,7 @@ The index provides:
 
 ### Available Context Files
 
-All files are in `/home/flagmate/Downloads/myagents/context/core/` with
+All files are in `/home/flagmate/.config/opencode/myagents/context/core/` with
 organized subfolders:
 
 ### Standards (Quality Guidelines + Analysis)
@@ -64,7 +64,7 @@ organized subfolders:
 
 **Step 2: Load Index** (for keyword matching)
 
-- Load `/home/flagmate/Downloads/myagents/context/index.md`
+- Load `/home/flagmate/.config/opencode/myagents/context/index.md`
 - Scan triggers to find relevant contexts
 - Load specific context files as needed
 
@@ -82,56 +82,56 @@ organized subfolders:
 
 ## When to Use Each File
 
-### /home/flagmate/Downloads/myagents/context/core/standards/code.md
+### /home/flagmate/.config/opencode/myagents/context/core/standards/code.md
 
 - Writing new code
 - Modifying existing code
 - Following modular/functional patterns
 - Making architectural decisions
 
-### /home/flagmate/Downloads/myagents/context/core/standards/docs.md
+### /home/flagmate/.config/opencode/myagents/context/core/standards/docs.md
 
 - Writing README files
 - Creating API documentation
 - Adding code comments
 
-### /home/flagmate/Downloads/myagents/context/core/standards/tests.md
+### /home/flagmate/.config/opencode/myagents/context/core/standards/tests.md
 
 - Writing new tests
 - Running test suites
 - Debugging test failures
 
-### /home/flagmate/Downloads/myagents/context/core/standards/patterns.md
+### /home/flagmate/.config/opencode/myagents/context/core/standards/patterns.md
 
 - Error handling
 - Security patterns
 - Common code patterns
 
-### /home/flagmate/Downloads/myagents/context/core/standards/analysis.md
+### /home/flagmate/.config/opencode/myagents/context/core/standards/analysis.md
 
 - Analyzing codebase patterns
 - Investigating bugs
 - Evaluating architecture
 
-### /home/flagmate/Downloads/myagents/context/core/workflows/delegation.md
+### /home/flagmate/.config/opencode/myagents/context/core/workflows/delegation.md
 
 - Delegating to general agent
 - Creating task context
 - Multi-file coordination
 
-### /home/flagmate/Downloads/myagents/context/core/workflows/task-breakdown.md
+### /home/flagmate/.config/opencode/myagents/context/core/workflows/task-breakdown.md
 
 - Tasks with 4+ files
 - Estimated effort >60 minutes
 - Complex dependencies
 
-### /home/flagmate/Downloads/myagents/context/core/workflows/sessions.md
+### /home/flagmate/.config/opencode/myagents/context/core/workflows/sessions.md
 
 - Session lifecycle
 - Cleanup procedures
 - Session isolation
 
-### /home/flagmate/Downloads/myagents/context/core/workflows/review.md
+### /home/flagmate/.config/opencode/myagents/context/core/workflows/review.md
 
 - Reviewing code
 - Conducting code audits
@@ -169,8 +169,8 @@ Session ID: {id} Created: {timestamp} Status: in_progress
 
 ## Static Context Available
 
-- /home/flagmate/Downloads/myagents/context/core/standards/code.md
-- /home/flagmate/Downloads/myagents/context/core/standards/tests.md
+- /home/flagmate/.config/opencode/myagents/context/core/standards/code.md
+- /home/flagmate/.config/opencode/myagents/context/core/standards/tests.md
 
 ## Constraints/Notes
 
