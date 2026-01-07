@@ -17,7 +17,8 @@ permissions:
     "yarn build": "allow"
     "pnpm build": "allow"
     "python -m build": "allow"
-    "*": "deny"
+    "make build": "allow"
+    "*": "ask"
   edit:
     "**/*": "deny"
 ---

@@ -1,6 +1,6 @@
 ---
 # OpenCode Agent Configuration
-description: "Universal agent for answering queries, executing tasks, and coordinating workflows across any domain"
+description: "Universal agent"
 mode: primary
 temperature: 0.2
 tools:

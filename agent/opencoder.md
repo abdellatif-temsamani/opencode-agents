@@ -1,6 +1,6 @@
 ---
 # OpenCode Agent Configuration
-description: "Multi-language implementation agent for modular and functional development"
+description: "developer"
 mode: primary
 temperature: 0.1
 tools:

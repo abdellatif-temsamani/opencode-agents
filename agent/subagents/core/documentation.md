@@ -15,6 +15,7 @@ permissions:
   edit:
     "plan/**/*.md": "allow"
     "**/*.md": "allow"
+    "**/*.txt": "allow"
     "**/*.env*": "deny"
     "**/*.key": "deny"
     "**/*.secret": "deny"
