@@ -1,6 +1,6 @@
 ---
 description: Create well-formatted conventional commits
-permissions:
+permission:
   bash:
     "git add": "deny"
     "git checkout *": "deny"
@@ -17,6 +17,9 @@ unstaged files. I always run `git add .` before running this command.
 ## Instructions for Agent
 
 When the user runs this command, execute the following workflow:
+
+0. **Check .gitignore**:
+    - always check `.gitignore` first
 
 1. **Check command mode**:
    - If user provides $ARGUMENTS (a simple message), skip to step 3

@@ -16,7 +16,7 @@ tools:
   glob: true
   bash: true
   patch: true
-permissions:
+permission:
   edit:
     "**/*.env*": "deny"
     "**/*.key": "deny"

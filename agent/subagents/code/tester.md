@@ -15,7 +15,7 @@ tools:
   edit: true
   write: true
   bash: true
-permissions:
+permission:
   bash:
     "rm -rf *": "ask"
     "sudo *": "deny"

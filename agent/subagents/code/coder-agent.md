@@ -16,7 +16,7 @@ tools:
   glob: true
   bash: false
   patch: true
-permissions:
+permission:
   bash:
     "*": "deny"
   edit:

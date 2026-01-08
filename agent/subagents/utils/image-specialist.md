@@ -2,7 +2,7 @@
 description: "Specialized agent for image editing and analysis using Gemini AI tools"
 mode: subagent
 temperature: 0.3
-permissions:
+permission:
   edit: deny
   bash: deny
   webfetch: allow

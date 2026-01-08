@@ -12,7 +12,7 @@ tools:
   bash: true
   read: true
   grep: true
-permissions:
+permission:
   bash:
     "tsc": "allow"
     "mypy": "allow"
