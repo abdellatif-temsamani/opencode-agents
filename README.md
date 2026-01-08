@@ -4,9 +4,9 @@ A comprehensive framework for managing specialized AI agents that handle coding,
 documentation, testing, and workflow coordination across any codebase and
 programming language.
 
-**Note:** This project incorporates files from
-[https://github.com/darrenhinde/OpenAgents](https://github.com/darrenhinde/OpenAgents)
-with modifications to suit my workflow.
+> **Note:** This project incorporates files from
+> [https://github.com/darrenhinde/OpenAgents](https://github.com/darrenhinde/OpenAgents)
+> with modifications to suit my workflow.
 
 ## Thanks
 

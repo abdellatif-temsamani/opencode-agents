@@ -13,16 +13,6 @@ tools:
   patch: true
 permissions:
   bash:
-    "rm -rf *": "ask"
-    "sudo *": "deny"
-    "chmod *": "ask"
-    "curl *": "ask"
-    "wget *": "ask"
-    "docker *": "ask"
-    "kubectl *": "ask"
-    "git add *": "deny"
-    "git checkout *": "deny"
-    "git switch *": "deny"
     "*": "ask"
   edit:
     "**/*.env*": "deny"
