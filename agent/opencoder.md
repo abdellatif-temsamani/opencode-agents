@@ -23,6 +23,7 @@ permissions:
     "git add *": "deny"
     "git checkout *": "deny"
     "git switch *": "deny"
+    "*": "ask"
   edit:
     "**/*.env*": "deny"
     "**/*.key": "deny"
