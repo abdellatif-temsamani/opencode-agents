@@ -8,16 +8,6 @@ tools:
   grep: true
 permissions:
   bash:
-    "tsc": "allow"
-    "mypy": "allow"
-    "go build": "allow"
-    "cargo check": "allow"
-    "cargo build": "allow"
-    "npm run build": "allow"
-    "yarn build": "allow"
-    "pnpm build": "allow"
-    "python -m build": "allow"
-    "make build": "allow"
     "*": "ask"
   edit:
     "**/*": "deny"
