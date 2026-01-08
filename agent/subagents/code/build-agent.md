@@ -1,5 +1,11 @@
 ---
+id: build-agent
+name: Build Agent
 description: "Type check and build validation agent"
+category: subagents/code
+type: subagent
+version: 1.0.0
+author: opencode
 mode: subagent
 temperature: 0.1
 tools:
@@ -8,9 +14,24 @@ tools:
   grep: true
 permissions:
   bash:
-    "*": "ask"
+    "tsc": "allow"
+    "mypy": "allow"
+    "go build": "allow"
+    "cargo check": "allow"
+    "cargo build": "allow"
+    "npm run build": "allow"
+    "yarn build": "allow"
+    "pnpm build": "allow"
+    "python -m build": "allow"
+    "*": "deny"
   edit:
     "**/*": "deny"
+
+# Tags
+tags:
+  - build
+  - validation
+  - type-check
 ---
 
 # Build Agent

@@ -1,7 +1,6 @@
 # Validate Repository
 
-Comprehensive validation command that checks the entire OpenAgents repository
-for consistency between CLI, documentation, registry, and components.
+Comprehensive validation command that checks the entire OpenAgents repository for consistency between CLI, documentation, registry, and components.
 
 ## Usage
 
@@ -54,7 +53,6 @@ This command performs a comprehensive validation of:
 ## Output
 
 The command generates a detailed report showing:
-
 - ✅ What's correct and validated
 - ⚠️ Warnings for potential issues
 - ❌ Errors that need fixing
@@ -62,8 +60,7 @@ The command generates a detailed report showing:
 
 ## Instructions
 
-You are a validation specialist. Your task is to comprehensively validate the
-OpenAgents repository for consistency and correctness.
+You are a validation specialist. Your task is to comprehensively validate the OpenAgents repository for consistency and correctness.
 
 ### Step 1: Validate Registry JSON
 
@@ -79,8 +76,7 @@ OpenAgents repository for consistency and correctness.
 
 ### Step 2: Validate Component Definitions
 
-For each component type (agents, subagents, commands, tools, plugins, contexts,
-config):
+For each component type (agents, subagents, commands, tools, plugins, contexts, config):
 
 1. Check required fields:
    - `id` (unique)
@@ -147,7 +143,6 @@ For each component with dependencies:
 Create a comprehensive report with sections:
 
 #### ✅ Validated Successfully
-
 - Registry JSON syntax
 - Component file existence
 - Profile integrity
@@ -156,14 +151,12 @@ Create a comprehensive report with sections:
 - Dependency chains
 
 #### ⚠️ Warnings
-
 - Orphaned files (exist but not referenced)
 - Unused components (defined but not in any profile)
 - Missing descriptions or tags
 - Outdated metadata dates
 
 #### ❌ Errors
-
 - Missing files
 - Broken dependencies
 - Invalid JSON
@@ -172,7 +165,6 @@ Create a comprehensive report with sections:
 - Duplicate component IDs
 
 #### 📊 Statistics
-
 - Total components: X
 - Total profiles: X
 - Total context files: X
@@ -182,7 +174,6 @@ Create a comprehensive report with sections:
 ### Step 8: Provide Recommendations
 
 Based on findings, suggest:
-
 - Files to create
 - Registry entries to add/remove
 - Documentation to update
@@ -197,31 +188,38 @@ Generated: 2025-11-19 14:30:00
 
 ## Summary
 
-✅ 95% validation passed ⚠️ 3 warnings found ❌ 2 errors found
+✅ 95% validation passed
+⚠️ 3 warnings found
+❌ 2 errors found
 
 ---
 
 ## ✅ Validated Successfully
 
 ### Registry Integrity
-
-✅ JSON syntax valid ✅ All required fields present ✅ Schema structure correct
+✅ JSON syntax valid
+✅ All required fields present
+✅ Schema structure correct
 
 ### Component Existence (45/47 files found)
-
-✅ Agents: 3/3 files exist ✅ Subagents: 15/15 files exist ✅ Commands: 8/8
-files exist ✅ Tools: 2/2 files exist ✅ Plugins: 2/2 files exist ✅ Contexts:
-13/15 files exist ✅ Config: 2/2 files exist
+✅ Agents: 3/3 files exist
+✅ Subagents: 15/15 files exist
+✅ Commands: 8/8 files exist
+✅ Tools: 2/2 files exist
+✅ Plugins: 2/2 files exist
+✅ Contexts: 13/15 files exist
+✅ Config: 2/2 files exist
 
 ### Profile Consistency
-
-✅ Essential: 9 components (matches README) ✅ Developer: 29 components (matches
-README) ✅ Business: 15 components (matches README) ✅ Full: 35 components
-(matches README) ✅ Advanced: 42 components (matches README)
+✅ Essential: 9 components (matches README)
+✅ Developer: 29 components (matches README)
+✅ Business: 15 components (matches README)
+✅ Full: 35 components (matches README)
+✅ Advanced: 42 components (matches README)
 
 ### Documentation Accuracy
-
-✅ README component counts match registry ✅ OpenAgent documentation up to date
+✅ README component counts match registry
+✅ OpenAgent documentation up to date
 ✅ Installation guide accurate
 
 ---
@@ -249,8 +247,7 @@ README) ✅ Business: 15 components (matches README) ✅ Full: 35 components
 
 1. **Missing Context File**
    - Component: `context:advanced-patterns`
-   - Expected path:
-     `/home/flagmate/.config/opencode/context/core/advanced-patterns.md`
+   - Expected path: `/home/flagmate/.config/opencode/context/core/advanced-patterns.md`
    - Referenced in: developer, full, advanced profiles
    - Action: Create file or remove from registry
 
@@ -265,7 +262,6 @@ README) ✅ Business: 15 components (matches README) ✅ Full: 35 components
 ## 📊 Statistics
 
 ### Component Distribution
-
 - Agents: 3
 - Subagents: 15
 - Commands: 8
@@ -276,7 +272,6 @@ README) ✅ Business: 15 components (matches README) ✅ Full: 35 components
 - **Total: 47 components**
 
 ### Profile Breakdown
-
 - Essential: 9 components (19%)
 - Developer: 29 components (62%)
 - Business: 15 components (32%)
@@ -284,14 +279,12 @@ README) ✅ Business: 15 components (matches README) ✅ Full: 35 components
 - Advanced: 42 components (89%)
 
 ### File Coverage
-
 - Total files defined: 47
 - Files found: 45 (96%)
 - Files missing: 2 (4%)
 - Orphaned files: 1
 
 ### Dependency Health
-
 - Total dependencies: 23
 - Valid dependencies: 22 (96%)
 - Broken dependencies: 1 (4%)
@@ -302,19 +295,15 @@ README) ✅ Business: 15 components (matches README) ✅ Full: 35 components
 ## 🔧 Recommended Actions
 
 ### High Priority (Errors)
-
-1. Create missing file:
-   `/home/flagmate/.config/opencode/context/core/advanced-patterns.md`
+1. Create missing file: `/home/flagmate/.config/opencode/context/core/advanced-patterns.md`
 2. Fix broken dependency in `opencoder`
 
 ### Medium Priority (Warnings)
-
 1. Remove orphaned file or add to registry
 2. Add `workflow-orchestrator` to a profile or deprecate
 3. Update metadata.lastUpdated to 2025-11-19
 
 ### Low Priority (Improvements)
-
 1. Add more tags to components for better searchability
 2. Consider adding descriptions to all context files
 3. Document component categories in README
@@ -336,7 +325,6 @@ README) ✅ Business: 15 components (matches README) ✅ Full: 35 components
 ## Implementation Notes
 
 The command should:
-
 - Use bash/python for file system operations
 - Parse JSON with proper error handling
 - Generate markdown report

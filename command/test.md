@@ -56,3 +56,4 @@ Typical workflow steps:
 
 7. **Success Message**\
    Reports successful completion of the full pipeline.
+
