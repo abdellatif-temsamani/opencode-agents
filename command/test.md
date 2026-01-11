@@ -4,56 +4,23 @@ description: Run the complete testing pipeline
 
 # Testing Pipeline
 
-This command executes the full testing workflow for the project, regardless of
-the technology stack. It automates type checking, linting, test execution, user
-prompts, and reporting.
+This command runs the complete testing pipeline for the project.
 
 ## Usage
 
-The exact commands depend on the ecosystem you're working in. Examples:
+To run the complete testing pipeline, just type:
 
-- **JavaScript/TypeScript**: `pnpm`, `npm`, `yarn`, `bun`
-- **Python**: `pytest`, `ruff`, `mypy`
-- **Go**: `go test`, `golangci-lint`
-- **Rust**: `cargo test`, `cargo clippy`, `cargo check`
-- **Java**: `mvn test`, `gradle test`
-- **PHP**: `phpunit`, `phpstan`, `pint`
-- **Others**: use the appropriate type checker, linter, and test runner.
-
-Typical workflow steps:
-
-1. Run the type checker
-2. Run the linter
-3. Run the test suite
+1. Run pnpm type:check
+2. Run pnpm lint
+3. Run pnpm test
 4. Report any failures
-5. Ask the user if they want to fix the errors on their own
-6. If they choose to fix, pause the pipeline
-7. Re-run the pipeline until all checks pass
-8. Report success
+5. Fix any failures
+6. Repeat until all tests pass
+7. Report success
 
 ## What This Command Does
 
-1. **Type Check**\
-   Executes the project’s type-checking command.
-
-2. **Lint**\
-   Runs static analysis and code-style validation.
-
-3. **Run Tests**\
-   Executes the test suite for the project.
-
-4. **Report Failures**\
-   Shows errors from type checking, linting, and tests.
-
-5. **Prompt the User**\
-   Asks:\
-   _"Do you want to fix these errors before continuing?"_
-   - **Yes** → pipeline pauses
-   - **No** → pipeline exits or gives guidance
-
-6. **Loop Until Clean**\
-   Continues running until all checks pass.
-
-7. **Success Message**\
-   Reports successful completion of the full pipeline.
-
+1. Runs `pnpm type:check` to check for type errors
+2. Runs `pnpm lint` to check for linting errors
+3. Runs `pnpm test` to run the tests
+4. Reports any failures

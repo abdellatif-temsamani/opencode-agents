@@ -1,7 +1,7 @@
 ---
 # Basic Info
 id: codebase-pattern-analyst
-name: Codebase Pattern Analyst
+name: PatternAnalyst
 description: "Codebase pattern analysis agent for finding similar implementations"
 category: subagents/code
 type: subagent
@@ -18,7 +18,7 @@ tools:
   bash: false
   edit: false
   write: false
-permission:
+permissions:
   bash:
     "*": "deny"
   edit:
@@ -71,7 +71,7 @@ Before searching, classify the pattern type based on the user's request:
 - **Data Processing**: Transform, filter, aggregate, validate
 - **Business Logic**: Domain-specific operations and rules
 - **Integration**: API calls, database operations, external services
-- **Authentication/Authorization**: Login, permission, role-based access
+- **Authentication/Authorization**: Login, permissions, role-based access
 
 #### **Structural Patterns** (How it's organized)
 - **Component Architecture**: React components, Vue components, Angular modules
@@ -118,7 +118,7 @@ Evaluate the quality and maturity of found patterns:
 Understand the context where patterns are used:
 
 #### **Domain Context**
-- **User Management**: Authentication, profiles, permission
+- **User Management**: Authentication, profiles, permissions
 - **Data Management**: CRUD operations, data validation
 - **UI/UX**: Components, layouts, interactions
 - **Business Logic**: Domain-specific operations

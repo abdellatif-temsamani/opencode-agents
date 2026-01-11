@@ -1,6 +1,6 @@
 ---
 id: documentation
-name: Documentation
+name: DocWriter
 description: "Documentation authoring agent"
 category: subagents/core
 type: subagent
@@ -15,13 +15,12 @@ tools:
   edit: true
   write: true
   bash: false
-permission:
+permissions:
   bash:
     "*": "deny"
   edit:
     "plan/**/*.md": "allow"
     "**/*.md": "allow"
-    "**/*.txt": "allow"
     "**/*.env*": "deny"
     "**/*.key": "deny"
     "**/*.secret": "deny"

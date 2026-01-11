@@ -1,6 +1,6 @@
 ---
 id: tester
-name: Tester
+name: TestEngineer
 description: "Test authoring and TDD agent"
 category: subagents/code
 type: subagent
@@ -15,7 +15,7 @@ tools:
   edit: true
   write: true
   bash: true
-permission:
+permissions:
   bash:
     "rm -rf *": "ask"
     "sudo *": "deny"
