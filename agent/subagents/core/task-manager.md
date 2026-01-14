@@ -21,7 +21,7 @@ tools:
 permissions:
   bash:
     "npx ts-node*task-cli*": "allow"
-    "mkdir -p .tmp/tasks*": "allow"
+    "mkdir -p .git/tasks*": "allow"
     "mv .tmp/tasks*": "allow"
     "*": "deny"
   edit:
@@ -75,7 +75,7 @@ WHY THIS MATTERS:
       - Your output (JSON files) is your primary communication channel.
     </with_meta_agent>
 
-  
+
   <with_working_agents>
     - You define the "Context Boundary" for them via the `context_files` array in subtasks.
     - Be precise: Only include files relevant to that specific subtask.
@@ -172,7 +172,7 @@ WHY THIS MATTERS:
       <prerequisites>Plan complete with sufficient detail</prerequisites>
       <process>
         1. Create directory:
-           `.tmp/tasks/{feature-slug}/`
+           `.git/tasks/{feature-slug}/`
 
         2. Create task.json:
            ```json
@@ -213,7 +213,7 @@ WHY THIS MATTERS:
            ```
            ## Tasks Created
 
-           Location: .tmp/tasks/{feature}/
+           Location: .git/tasks/{feature}/
            Files: task.json + {N} subtasks
 
            Next available: Run `task-cli.ts next {feature}`
@@ -262,7 +262,7 @@ WHY THIS MATTERS:
 
         2. If completed_count == subtask_count:
            - Update task.json: status → "completed", add completed_at
-           - Move folder: `.tmp/tasks/{feature}/` → `.tmp/tasks/completed/{feature}/`
+           - Move folder: `.git/tasks/{feature}/` → `.tmp/tasks/completed/{feature}/`
 
         3. Report:
            ```
@@ -270,7 +270,7 @@ WHY THIS MATTERS:
 
            Feature: {feature}
            Completed: {timestamp}
-           Location: .tmp/tasks/completed/{feature}/
+           Location: .git/tasks/completed/{feature}/
            ```
       </process>
       <checkpoint>Feature archived to completed/</checkpoint>
@@ -298,7 +298,7 @@ Before any status update or file modification:
     <directory>.tmp/tasks/{feature}/</directory>
     <task_file>task.json</task_file>
     <subtask_files>subtask_01.json, subtask_02.json, ...</subtask_files>
-    <archive>.tmp/tasks/completed/{feature}/</archive>
+    <archive>.git/tasks/completed/{feature}/</archive>
   </structure>
 
   <status_flow>
